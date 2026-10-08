@@ -1,0 +1,19 @@
+[project]
+name = "ocr-eval"
+version = "0.1.0"
+description = "Evaluate AI models (OpenAI, Mistral, Gemini, Anthropic, ...) on handwritten text recognition"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "rapidfuzz>=3.9",
+]
+
+[project.scripts]
+ocr-eval = "ocr_eval.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

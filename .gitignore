@@ -1,0 +1,8 @@
+.env
+.venv/
+results/
+__pycache__/
+.idea/
+# dataset contents stay local; keep only the folder's README
+data/*
+!data/README.md
